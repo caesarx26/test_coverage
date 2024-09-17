@@ -95,12 +95,12 @@ def test_update():
     account.create()
 
     # Update the account
-    account.name = "Updated Account Name"
+    account.name = "Update"
     account.update()
 
     # Verify the account was updated
     updated_account = Account.find(account.id)
-    assert updated_account.name == "Updated Account Name"
+    assert updated_account.name == "Update"
     
 def test_delete():
     """ Test deleting an account"""
